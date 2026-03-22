@@ -24,7 +24,10 @@
 ```
 /novelist-expand-brainstorm   # 扩展世界观/人物/故事结构
 /novelist-expand-outline      # 扩展大纲和细纲
+/novelist-write               # 继续章节撰写
 ```
+
+**注意**：扩展命令只添加新内容，不修改已有内容。扩展后仍需调用 `/novelist-write` 继续撰写新章节。
 
 ### 其他工具
 
