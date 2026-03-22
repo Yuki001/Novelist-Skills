@@ -6,17 +6,17 @@
 
 ### 快速启动
 ```
-/novelist:purpose
+/novelist-purpose
 ```
 一次性生成所有元信息文档（00-概述 到 06-任务列表）
 
 ### 标准创作流程
 ```
-1. /novelist:brainstorm  # 头脑风暴
-2. /novelist:outline     # 大纲规划
-3. /novelist:write       # 章节写作
-4. /novelist:expand-outline  # 扩展大纲（可选）
-5. /novelist:memory      # 记忆管理（可选）
+1. /novelist-brainstorm  # 头脑风暴
+2. /novelist-outline     # 大纲规划
+3. /novelist-write       # 章节写作
+4. /novelist-expand-outline  # 扩展大纲（可选）
+5. /novelist-memory      # 记忆管理（可选）
 ```
 
 ## Skills 说明
@@ -63,12 +63,12 @@ novels/<project-name>/
 
 创建新小说项目：
 ```
-/novelist:purpose
+/novelist-purpose
 ```
 按提示输入创意，系统将生成所有元信息文档。
 
 开始写作：
 ```
-/novelist:write
+/novelist-write
 ```
 系统自动读取任务列表，撰写下一章节。
