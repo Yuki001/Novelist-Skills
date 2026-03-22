@@ -60,21 +60,24 @@
 ## 项目结构
 
 ```
-novels/<project-name>/
-  00-概述.md
-  01-世界观设定.md
-  02-人物设定.md
-  03-故事结构.md
-  04-大纲.md
-  05-细纲.md
-  06-任务列表.md
-  07-记忆.md
-  memory/
-    角色状态.md
-    悬念追踪.md
-  chapters/
-    第01章.md
-    第02章.md
+novels/
+  current-project.yaml          # 当前项目配置
+  <project-name>/
+    novel-config.yaml           # 项目配置文件
+    00-概述.md
+    01-世界观设定.md
+    02-人物设定.md
+    03-故事结构.md
+    04-大纲.md
+    05-细纲.md
+    06-任务列表.md
+    07-记忆.md
+    memory/
+      角色状态.md
+      悬念追踪.md
+    chapters/
+      第01章.md
+      第02章.md
 ```
 
 ## 使用示例

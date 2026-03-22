@@ -13,13 +13,17 @@ tags: [writing, chapter, memory]
 
 ## 输入 (Input)
 
+**前置检查**：
+- 读取 `novels/current-project.yaml` 获取 `current_project_dir`
+- 检查该目录下的 `novel-config.yaml` 是否存在
+- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
+- 所有后续操作都在 `current_project_dir` 下进行
+
 需要已完成的文档：
 - `04-大纲.md`
 - `05-细纲.md`
 - `06-任务列表.md`
 - `07-记忆.md`（如果存在）
-
-如果这些文档不存在，提示用户先运行 `/novelist:outline`。
 
 ---
 
@@ -74,6 +78,10 @@ tags: [writing, chapter, memory]
 ### 6. 更新任务列表
 
 在 `06-任务列表.md` 中勾选已完成的章节。
+
+### 7. 更新配置文件
+
+更新 `novel-config.yaml` 中的 `completed_chapters` 字段，增加1。
 
 ---
 

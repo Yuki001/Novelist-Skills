@@ -13,6 +13,12 @@ tags: [memory, management, context]
 
 ## 输入 (Input)
 
+**前置检查**：
+- 读取 `novels/current-project.yaml` 获取 `current_project_dir`
+- 检查该目录下的 `novel-config.yaml` 是否存在
+- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
+- 所有后续操作都在 `current_project_dir` 下进行
+
 需要已存在的文档：
 - `07-记忆.md`
 

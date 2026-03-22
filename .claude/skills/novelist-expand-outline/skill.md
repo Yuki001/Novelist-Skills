@@ -17,6 +17,12 @@ tags: [outline, expansion, long-form]
 
 ## 输入 (Input)
 
+**前置检查**：
+- 读取 `novels/current-project.yaml` 获取 `current_project_dir`
+- 检查该目录下的 `novel-config.yaml` 是否存在
+- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
+- 所有后续操作都在 `current_project_dir` 下进行
+
 需要已完成的文档：
 - `04-大纲.md`
 - `05-细纲.md`
@@ -58,6 +64,12 @@ tags: [outline, expansion, long-form]
 ### 5. 更新任务列表
 
 **严格遵守**：只在 `06-任务列表.md` 末尾添加新章节任务，不修改已有任务。
+
+### 6. 更新配置文件
+
+更新 `novel-config.yaml`：
+- `outline_expansions` 字段增加1
+- `planned_chapters` 字段更新为新的章节总数
 
 ---
 

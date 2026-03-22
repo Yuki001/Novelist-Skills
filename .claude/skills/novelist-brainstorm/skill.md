@@ -42,13 +42,34 @@ tags: [brainstorm, planning, worldbuilding, character]
 
 **IMPORTANT**: 必须明确用户想法后才能继续。
 
-### 1. 生成 00-概述.md
+### 1. 创建项目配置
+
+在 `novels/<project-name>/` 目录下创建 `novel-config.yaml`：
+```yaml
+project_name: <project-name>
+project_dir: novels/<project-name>
+created_at: <timestamp>
+brainstorm_expansions: 0
+outline_expansions: 0
+planned_chapters: 0
+completed_chapters: 0
+```
+
+在 `novels/` 目录下创建/更新 `current-project.yaml`：
+```yaml
+current_project: <project-name>
+current_project_dir: novels/<project-name>
+```
+
+所有后续操作都在 `current_project_dir` ，即 `novels/<project-name>/` 下进行
+
+### 2. 生成 00-概述.md
 
 创建小说概述文档，包含：
 - **一句话概括**：不超过25个词，包含类型、主角、任务
 - **一段式概括**：五句话，包含三幕结构和三次灾难
 
-### 2. 生成 01-世界观设定.md
+### 3. 生成 01-世界观设定.md
 
 创建世界观文档，包含：
 - 时代背景
@@ -58,7 +79,7 @@ tags: [brainstorm, planning, worldbuilding, character]
 
 参考模版：[template-worldview.md](references/template-worldview.md)
 
-### 3. 生成 02-人物设定.md
+### 4. 生成 02-人物设定.md
 
 创建人物档案，包含：
 - 主角详细档案
@@ -67,7 +88,7 @@ tags: [brainstorm, planning, worldbuilding, character]
 
 参考模版：[template-character.md](references/template-character.md)
 
-### 4. 生成 03-故事结构.md
+### 5. 生成 03-故事结构.md
 
 创建故事结构文档，包含：
 - 主线设计
@@ -81,14 +102,15 @@ tags: [brainstorm, planning, worldbuilding, character]
 
 ## 输出 (Output)
 
-在 `novels/<project-name>/` 目录下生成4个文档：
+在 `novels/<project-name>/` 目录下生成：
+- `novel-config.yaml`（项目配置）
 - `00-概述.md`
 - `01-世界观设定.md`
 - `02-人物设定.md`
 - `03-故事结构.md`
 
 完成后提示：
-> "头脑风暴阶段完成！已生成4个文档。接下来可以运行 `/novelist:outline` 进行大纲规划。"
+> "头脑风暴阶段完成！已生成配置文件和4个文档。接下来可以运行 `/novelist-outline` 进行大纲规划。"
 
 ---
 
