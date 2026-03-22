@@ -44,17 +44,6 @@ tags: [brainstorm, planning, worldbuilding, character]
 
 ### 1. 创建项目配置
 
-在 `novels/<project-name>/` 目录下创建 `novel-config.yaml`：
-```yaml
-project_name: <project-name>
-project_dir: novels/<project-name>
-created_at: <timestamp>
-brainstorm_expansions: 0
-outline_expansions: 0
-planned_chapters: 0
-completed_chapters: 0
-```
-
 在 `novels/` 目录下创建/更新 `current-project.yaml`：
 ```yaml
 current_project: <project-name>
@@ -103,7 +92,6 @@ current_project_dir: novels/<project-name>
 ## 输出 (Output)
 
 在 `novels/<project-name>/` 目录下生成：
-- `novel-config.yaml`（项目配置）
 - `00-概述.md`
 - `01-世界观设定.md`
 - `02-人物设定.md`

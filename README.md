@@ -29,6 +29,15 @@
 
 **注意**：扩展命令只添加新内容，不修改已有内容。扩展后仍需调用 `/novelist-write` 继续撰写新章节。
 
+### Style 文风流程
+
+设定文风并润色章节：
+
+```
+/novelist-style               # 设定文字风格
+/novelist-polish              # 润色已有章节
+```
+
 ### 其他工具
 
 ```
@@ -53,6 +62,12 @@
 
 **novelist-expand-outline** - 扩展大纲和细纲，添加新章节任务（只添加，不修改已有内容）
 
+### Style 文风命令
+
+**novelist-style** - 根据用户需求与参考设定文字风格，生成 08-文字风格.md
+
+**novelist-polish** - 根据文风设定润色已有章节，保持情节不变
+
 ### 其他命令
 
 **novelist-memory** - 显式更新或重新整理记忆，必要时拆分到 memory/ 目录
@@ -63,7 +78,6 @@
 novels/
   current-project.yaml          # 当前项目配置
   <project-name>/
-    novel-config.yaml           # 项目配置文件
     00-概述.md
     01-世界观设定.md
     02-人物设定.md
@@ -72,6 +86,7 @@ novels/
     05-细纲.md
     06-任务列表.md
     07-记忆.md
+    08-文字风格.md
     memory/
       角色状态.md
       悬念追踪.md
@@ -93,3 +108,14 @@ novels/
 /novelist-write
 ```
 系统自动读取任务列表，撰写下一章节。
+
+设定文风与润色：
+```
+/novelist-style
+```
+输入文风需求（如：简洁明快、古典优雅），系统生成文风设定文档。
+
+```
+/novelist-polish
+```
+对已有章节进行文风润色，可指定章节编号或润色最新章节。

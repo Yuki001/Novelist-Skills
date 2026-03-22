@@ -17,7 +17,7 @@ tags: [brainstorm, expansion, worldbuilding, character]
 
 **前置检查**：
 - 读取 `novels/current-project.yaml` 获取 `current_project_dir`
-- 检查该目录下的 `novel-config.yaml` 是否存在
+- 检查该目录下是否存在头脑风暴文档
 - 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
 - 所有后续操作都在 `current_project_dir` 下进行
 
@@ -56,10 +56,6 @@ tags: [brainstorm, expansion, worldbuilding, character]
 - 在文档末尾或合适的章节后添加
 - 保持与现有内容的一致性
 - 使用相同的格式和风格
-
-### 4. 更新配置文件
-
-更新 `novel-config.yaml` 中的 `brainstorm_expansions` 字段，增加1。
 
 ---
 

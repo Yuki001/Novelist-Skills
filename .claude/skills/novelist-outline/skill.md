@@ -17,7 +17,7 @@ tags: [outline, planning, structure]
 
 **前置检查**：
 - 读取 `novels/current-project.yaml` 获取 `current_project_dir`
-- 检查该目录下的 `novel-config.yaml` 是否存在
+- 检查该目录下是否存在头脑风暴文档
 - 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
 - 所有后续操作都在 `current_project_dir` 下进行
 
@@ -57,10 +57,6 @@ tags: [outline, planning, structure]
 创建可执行的章节任务列表：
 - 每章的简要描述
 - 使用 checkbox 格式便于追踪进度
-
-### 4. 更新配置文件
-
-更新 `novel-config.yaml` 中的 `planned_chapters` 字段为规划的章节总数。
 
 ---
 
