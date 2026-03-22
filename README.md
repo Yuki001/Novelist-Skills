@@ -2,42 +2,57 @@
 
 基于三位一体·叙事空间创作系统的模块化中文网文创作助手。
 
-## 核心工作流
+## 工作流
 
-### 快速启动
-```
-/novelist-purpose
-```
-一次性生成所有元信息文档（00-概述 到 06-任务列表）
+### Core 核心流程
 
-### 标准创作流程
+创建新小说的标准流程：
+
 ```
-1. /novelist-brainstorm  # 头脑风暴
-2. /novelist-outline     # 大纲规划
-3. /novelist-write       # 章节写作
-4. /novelist-expand-outline  # 扩展大纲（可选）
-5. /novelist-memory      # 记忆管理（可选）
+1. /novelist-purpose       # 快速启动（brainstorm + outline 一次完成）
+   或
+   /novelist-brainstorm    # 头脑风暴
+   /novelist-outline       # 大纲规划
+
+2. /novelist-write         # 章节写作
+```
+
+### Expand 扩展流程
+
+长篇网文持续创作：
+
+```
+/novelist-expand-brainstorm   # 扩展世界观/人物/故事结构
+/novelist-expand-outline      # 扩展大纲和细纲
+```
+
+### 其他工具
+
+```
+/novelist-memory              # 记忆管理
 ```
 
 ## Skills 说明
 
-### novelist-brainstorm
-生成：00-概述.md, 01-世界观设定.md, 02-人物设定.md, 03-故事结构.md
+### Core 核心命令
 
-### novelist-outline
-生成：04-大纲.md, 05-细纲.md, 06-任务列表.md
+**novelist-purpose** - 快速启动，一次性执行 brainstorm + outline
 
-### novelist-write
-逐章撰写（3000-5000字），自动更新 07-记忆.md
+**novelist-brainstorm** - 生成：00-概述.md, 01-世界观设定.md, 02-人物设定.md, 03-故事结构.md
 
-### novelist-expand-outline
-扩展大纲和细纲，添加新章节任务（用于长篇网文）
+**novelist-outline** - 生成：04-大纲.md, 05-细纲.md, 06-任务列表.md
 
-### novelist-memory
-显式更新或重新整理记忆，必要时拆分到 memory/ 目录
+**novelist-write** - 逐章撰写（3000-5000字），自动更新 07-记忆.md
 
-### novelist-purpose
-快速启动，一次性执行 brainstorm + outline
+### Expand 扩展命令
+
+**novelist-expand-brainstorm** - 扩展世界观、人物、故事结构（只添加，不修改已有内容）
+
+**novelist-expand-outline** - 扩展大纲和细纲，添加新章节任务（只添加，不修改已有内容）
+
+### 其他命令
+
+**novelist-memory** - 显式更新或重新整理记忆，必要时拆分到 memory/ 目录
 
 ## 项目结构
 
