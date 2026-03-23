@@ -20,7 +20,7 @@ tags: [outline, expansion, long-form]
 **前置检查**：
 - 读取 `novels/current-project.yaml` 获取 `current_project_dir`
 - 检查该目录下是否存在大纲文档
-- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
+- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-propose`
 - 所有后续操作都在 `current_project_dir` 下进行
 
 需要已完成的文档：

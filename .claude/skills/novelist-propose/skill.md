@@ -1,5 +1,5 @@
 ---
-name: novelist-purpose
+name: novelist-propose
 description: 快速启动 - 一次执行 brainstorm + outline 生成所有元信息
 category: 小说创作
 tags: [quickstart, all-in-one]

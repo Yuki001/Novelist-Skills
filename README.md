@@ -9,7 +9,7 @@
 创建新小说的标准流程：
 
 ```
-1. /novelist-purpose       # 快速启动（brainstorm + outline 一次完成）
+1. /novelist-propose       # 快速启动（brainstorm + outline 一次完成）
    或
    /novelist-brainstorm    # 头脑风暴
    /novelist-outline       # 大纲规划
@@ -48,7 +48,7 @@
 
 ### Core 核心命令
 
-**novelist-purpose** - 快速启动，一次性执行 brainstorm + outline
+**novelist-propose** - 快速启动，一次性执行 brainstorm + outline
 
 **novelist-brainstorm** - 生成：00-概述.md, 01-世界观设定.md, 02-人物设定.md, 03-故事结构.md
 
@@ -99,7 +99,7 @@ novels/
 
 创建新小说项目：
 ```
-/novelist-purpose
+/novelist-propose
 ```
 按提示输入创意，系统将生成所有元信息文档。
 

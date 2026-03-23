@@ -15,7 +15,7 @@ tags: [style, writing, polish]
 
 **前置检查**：
 - 读取 `novels/current-project.yaml` 获取 `current_project_dir`
-- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-purpose`
+- 如果不存在，提示用户先运行 `/novelist-brainstorm` 或 `/novelist-propose`
 - 所有后续操作都在 `current_project_dir` 下进行
 
 **用户输入**：
